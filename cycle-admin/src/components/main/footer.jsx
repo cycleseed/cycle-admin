@@ -7,11 +7,12 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import {Container} from '@material-ui/core'
+import {Box} from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
   root:{
     backgroundColor: "black",
+    height: 80,
 
   }
 }))
@@ -20,11 +21,10 @@ const Footer = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Container>
-        ya traigo sueño
-      </Container>
-    </div>
+   
+   
+      <Box className={classes.root}/>
+   
   );
 }
 

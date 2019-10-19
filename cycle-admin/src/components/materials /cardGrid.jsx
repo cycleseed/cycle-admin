@@ -11,6 +11,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
+  gridMargin : {
+    marginBottom: 51
+  }
 }));
 
 const CardGrid = ({className})=> {
@@ -22,13 +25,13 @@ const CardGrid = ({className})=> {
             <Grid item md={6}>
               <MaterialCard />
             </Grid>
-            <Grid item md={6} >
+            <Grid item md={6}className={classes.gridMargin} >
               <MaterialCard/>
             </Grid>
             <Grid item md={6}>
               <MaterialCard/>
             </Grid>
-            <Grid item md={6}>
+            <Grid item md={6}className={classes.gridMargin}>
               <MaterialCard/>
             </Grid>
       </Grid>
